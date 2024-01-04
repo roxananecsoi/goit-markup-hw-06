@@ -226,6 +226,16 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.checkbox-link {
+  color: #4d5ae5;
+}
+
+.checkbox-input:checked + .checkbox-link span:first-child {
+  border: none;
+  background-color: #404bbf;
+  fill: #f4f4fd;
+}
+
 .logo {
   color: #4d5ae5;
   font-family: var(--logo-font-family);

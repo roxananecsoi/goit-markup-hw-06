@@ -572,15 +572,12 @@
           </div>
           <div class="comment-div">
             <label class="name-label" for="user-comment">Comment</label>
-            <div class="label-div">
-              <textarea
-                name="user-comment"
-                rows="5"
-                placeholder="Text input"
-                id="user-comment"
-                class="textarea-comment"
-              ></textarea>
-            </div>
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+              class="textarea-comment"
+            ></textarea>
           </div>
           <div class="checkbox-div">
             <input
@@ -588,11 +585,16 @@
               type="checkbox"
               value="true"
               name="user-privacy"
-              class="checkbox-input .visually-hidden"
+              class="checkbox-input visually-hidden"
             />
-            <label for="user-privacy" class="checkbox-label"
-              >I accept the terms and conditions of the
-              <span class="checkbox-span">Privacy Policy</span>
+            <label for="user-privacy" class="checkbox-label">
+              <span class="checkbox-span">
+                <svg width="10" height="8" class="checkbox-svg">
+                  <use href="./images/icons.svg#checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="checkbox-link" href="">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="modal-button-send">Send</button>
