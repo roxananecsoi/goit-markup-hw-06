@@ -567,30 +567,30 @@
             </div>
             <div class="comment-div">
               <label class="name-label" for="user-comment">Comment</label>
-                <textarea
+               <div class="label-div">
+                 <textarea
                   name="user-comment"
                   rows="5"
                   placeholder="Text input"
                   id="user-comment"
                   class="textarea-comment"
-                ></textarea>
-              
-            
-            </div>
-            
-              <div class="form-field">
+                 ></textarea>
+               </div>            
+            </div>            
+            <div class="checkbox-div">
                 <input
+                  id="user-privacy"
                   type="checkbox"
-                  name="newsletter"
-                  value="weekly"
-                  id="weekly"
+                  value="true"
+                  name="user-privacy"                
+                  class="checkbox-input .visually-hidden"
                 />
-                <label for="weekly"
-                  >I accept the terms and conditions of the Privacy Policy</label
-                >
-           
-  
-            <button type="submit">Subscribe</button>
+                <label for="user-privacy" class="checkbox-label" id="user-privacy"
+                  >I accept the terms and conditions of the 
+                  <span class="checkbox-span">Privacy Policy</span>
+                </label>
+           </div>  
+            <button type="submit" class="modal-button-send">Send</button>
           </form>
         </div>
       </div>
