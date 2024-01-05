@@ -231,8 +231,7 @@ button {
   color: #4d5ae5;
 }
 
-
-.checkbox-input:checked + .checkbox-span {
+#user-privacy:checked + .checkbox-label .checkbox-span {
   border: none;
   background-color: #404bbf;
   fill: #f4f4fd;
